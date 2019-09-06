@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: API de test
+  version: '1.0'
+  contact:
+    name: Stéphane Gully
+    email: noreply@abes.fr
+  license:
+    name: MIT
+  description: "Ceci est une api de test permettant de tester l'outil https://stoplight.io/studio/"
+servers:
+  - url: 'http://localhost:3000'
+    description: "Racine de l'API"
+paths: {}
+components:
+  schemas: {}
+  securitySchemes:
+    scheme_0:
+      type: http
+      scheme: Basic
