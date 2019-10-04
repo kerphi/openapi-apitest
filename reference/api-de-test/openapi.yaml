@@ -11,7 +11,37 @@ info:
 servers:
   - url: 'http://localhost:3000'
     description: "Racine de l'API"
-paths: {}
+paths:
+  '/users/{userid}':
+    parameters:
+      name: userid
+      in: path
+      required: true
+      type: string
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: "identifiant interne de l'utilisateur"
+                  displayName:
+                    type: string
+                    description: "Le nom, prénom de l'utilisateur"
+              examples:
+                example-1:
+                  id: 354
+                  displayName: Stéphane Gully
+        '404':
+          description: Not Found
+      description: "Cette route permet de récupérer les données d'un utilisateur passé en argument."
 components:
   schemas: {}
   securitySchemes:
