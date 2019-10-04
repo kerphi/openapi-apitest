@@ -35,10 +35,7 @@ paths:
                   displayName:
                     type: string
                     description: "Le nom, prénom de l'utilisateur"
-              examples:
-                example-1:
-                  id: 354
-                  displayName: Stephane Gully
+              examples: {}
         '404':
           description: Not Found
       description: "Cette route permet de récupérer les données d'un utilisateur passé en argument."
