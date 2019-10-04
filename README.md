@@ -11,7 +11,7 @@ Test de génération d'un siteweb à partir des spécification openapi en yaml.
 
 ```bash
 docker run --rm -p 8080:80 \
-  -e SPEC_URL=https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/2_0/petstore.yaml \
+  -e SPEC_URL=https://raw.githubusercontent.com/kerphi/openapi-apitest/master/reference/api-de-test/openapi.yaml \
   redocly/redoc
 ```
 
@@ -19,6 +19,6 @@ docker run --rm -p 8080:80 \
 
 ```bash
 docker run --rm -p 8080:8080 \
-  -e URL=https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/2_0/petstore.yaml \
+  -e URL=https://raw.githubusercontent.com/kerphi/openapi-apitest/master/reference/api-de-test/openapi.yaml \
   swaggerapi/swagger-ui
 ```
