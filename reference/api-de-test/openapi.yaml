@@ -38,10 +38,15 @@ paths:
               examples:
                 example-1:
                   id: 354
-                  displayName: "Stephane Gully"
+                  displayName: Stephane Gully
         '404':
           description: Not Found
       description: "Cette route permet de récupérer les données d'un utilisateur passé en argument."
+      parameters:
+        - schema:
+            type: string
+          in: query
+          description: ''
 components:
   schemas: {}
   securitySchemes:
